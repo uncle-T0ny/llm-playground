@@ -5,7 +5,9 @@ import {ChatBedrockConverse} from "@langchain/aws";
 import {fromIni} from "@aws-sdk/credential-provider-ini";
 
 const LLM_BEDROCK_MODEL = "us.meta.llama4-scout-17b-instruct-v1:0";
+const OPEN_AI_MODEL = "llama-4-scout-17b-16e-instruct"
 
+// This is for tracing purposes (see https://docs.arize.com/phoenix)
 import "./instrumentation";
 
 
@@ -35,7 +37,7 @@ async function main() {
             baseURL: "https://api.cerebras.ai/v1"
         },
         apiKey: process.env.CREBRAS_API_KEY,
-        model: "llama-4-scout-17b-16e-instruct",
+        model: OPEN_AI_MODEL,
         temperature: 0,
         maxRetries: 3,
         verbose: process.env.DEBUG === "true",
