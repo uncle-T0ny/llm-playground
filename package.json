@@ -1,0 +1,44 @@
+{
+  "name": "llm-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx ts-node src/main.ts",
+    "playground": "npx ts-node src/playground.ts",
+    "test-cases": "npx ts-node src/test-cases/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/credential-provider-ini": "^3.670.0",
+    "@anthropic-ai/sdk": "^0.37.0",
+    "@arizeai/openinference-instrumentation-langchain": "^2.0.0",
+    "@langchain/anthropic": "^0.3.3",
+    "@langchain/core": "^0.3.39",
+    "@langchain/groq": "^0.1.2",
+    "@langchain/openai": "^0.5.7",
+    "@langchain/aws": "^0.1.9",
+    "@opentelemetry/exporter-trace-otlp-proto": "^0.57.0",
+    "@opentelemetry/sdk-trace-base": "^1.30.0",
+    "@opentelemetry/sdk-trace-node": "^1.30.0",
+    "dotenv": "^16.4.7",
+    "langchain": "^0.3.15",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.85.4",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.8",
+    "@babel/preset-env": "^7.26.8",
+    "@babel/preset-typescript": "^7.26.0",
+    "@jest/globals": "^29.7.0",
+    "@types/node": "^22.13.1",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
